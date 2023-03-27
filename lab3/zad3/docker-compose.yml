@@ -1,0 +1,8 @@
+services:
+  web:
+    build: web
+
+  proxy:
+    build: proxy
+    ports:
+      - "443:443"
