@@ -1,0 +1,24 @@
+services:
+  db:
+    image: mongo:$MONGO_VERSION
+    networks:
+      net_A:
+        aliases:
+          - db
+    env_file:
+      - .env
+
+  server:
+    build: ./server
+    depends_on:
+      - db
+    ports:
+      - "3003:8080"
+    networks:
+      - net_A
+    env_file:
+      - .env
+
+networks:
+  net_A:
+    external: false
