@@ -1,0 +1,21 @@
+services:
+  redis:
+    image: redis/redis-stack-server:latest
+    command: redis-server /usr/local/etc/redis/redis.conf
+    volumes:
+      - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
+    networks:
+      - backend
+
+  web:
+    build: ./web
+    depends_on:
+      - redis
+    networks:
+      - backend
+    ports:
+      - "3000:3000"
+
+networks:
+  backend:
+    external: false
