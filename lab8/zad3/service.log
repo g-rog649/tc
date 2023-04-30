@@ -1,0 +1,179 @@
+zad3-redis-1  | 1:C 30 Apr 2023 09:42:31.473 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+zad3-redis-1  | 1:C 30 Apr 2023 09:42:31.473 # Redis version=6.2.12, bits=64, commit=00000000, modified=0, pid=1, just started
+zad3-redis-1  | 1:C 30 Apr 2023 09:42:31.473 # Configuration loaded
+zad3-redis-1  | 1:M 30 Apr 2023 09:42:31.474 * monotonic clock: POSIX clock_gettime
+zad3-redis-1  | 1:M 30 Apr 2023 09:42:31.476 * Running mode=standalone, port=6379.
+zad3-redis-1  | 1:M 30 Apr 2023 09:42:31.476 # Server initialized
+zad3-redis-1  | 1:M 30 Apr 2023 09:42:31.476 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+zad3-redis-1  | 1:M 30 Apr 2023 09:42:31.476 * Ready to accept connections
+zad3-redis-1  | 1:signal-handler (1682847837) Received SIGTERM scheduling shutdown...
+zad3-redis-1  | 1:M 30 Apr 2023 09:43:57.206 # User requested shutdown...
+zad3-redis-1  | 1:M 30 Apr 2023 09:43:57.208 * Saving the final RDB snapshot before exiting.
+zad3-redis-1  | 1:M 30 Apr 2023 09:43:57.217 * DB saved on disk
+zad3-redis-1  | 1:M 30 Apr 2023 09:43:57.217 # Redis is now ready to exit, bye bye...
+zad3-postgres-1  | The files belonging to this database system will be owned by user "postgres".
+zad3-nginx-1     | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+zad3-postgres-1  | This user must also own the server process.
+zad3-postgres-1  | 
+zad3-postgres-1  | The database cluster will be initialized with locale "en_US.utf8".
+zad3-postgres-1  | The default database encoding has accordingly been set to "UTF8".
+zad3-postgres-1  | The default text search configuration will be set to "english".
+zad3-postgres-1  | 
+zad3-nginx-1     | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+zad3-nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+zad3-nginx-1     | 10-listen-on-ipv6-by-default.sh: info: IPv6 listen already enabled
+zad3-nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+zad3-postgres-1  | Data page checksums are disabled.
+zad3-postgres-1  | 
+zad3-postgres-1  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+zad3-postgres-1  | creating subdirectories ... ok
+zad3-nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+zad3-nginx-1     | /docker-entrypoint.sh: Configuration complete; ready for start up
+zad3-postgres-1  | selecting dynamic shared memory implementation ... posix
+zad3-nginx-1     | 2023/04/30 09:42:35 [notice] 1#1: using the "epoll" event method
+zad3-postgres-1  | selecting default max_connections ... 100
+zad3-postgres-1  | selecting default shared_buffers ... 128MB
+zad3-postgres-1  | selecting default time zone ... Etc/UTC
+zad3-postgres-1  | creating configuration files ... ok
+zad3-postgres-1  | running bootstrap script ... ok
+zad3-postgres-1  | performing post-bootstrap initialization ... ok
+zad3-postgres-1  | syncing data to disk ... ok
+zad3-postgres-1  | 
+zad3-postgres-1  | 
+zad3-postgres-1  | Success. You can now start the database server using:
+zad3-postgres-1  | initdb: warning: enabling "trust" authentication for local connections
+zad3-postgres-1  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+zad3-postgres-1  | 
+zad3-web-1       | 
+zad3-web-1       | > app@1.0.0 start
+zad3-web-1       | > node src/index.js
+zad3-web-1       | 
+zad3-web-1       | App listening on port 3000
+zad3-web-1       | Connected to Redis client
+zad3-web-1       | Connected to Postgres client
+zad3-web-1       | Get all messages
+zad3-web-1       | Added message Tytuł: "Treść wiadomości"
+zad3-web-1       | Added user Jan Kowalski
+zad3-web-1       | Get all messages
+zad3-web-1       | npm ERR! path /app
+zad3-web-1       | npm ERR! command failed
+zad3-web-1       | npm ERR! signal SIGTERM
+zad3-web-1       | npm ERR! command sh -c node src/index.js
+zad3-web-1       | 
+zad3-web-1       | npm ERR! A complete log of this run can be found in: /root/.npm/_logs/2023-04-30T09_42_35_537Z-debug-0.log
+zad3-nginx-1     | 2023/04/30 09:42:35 [notice] 1#1: nginx/1.23.3
+zad3-nginx-1     | 2023/04/30 09:42:35 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+zad3-nginx-1     | 2023/04/30 09:42:35 [notice] 1#1: OS: Linux 5.15.0-70-generic
+zad3-nginx-1     | 2023/04/30 09:42:35 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+zad3-nginx-1     | 2023/04/30 09:42:35 [notice] 1#1: start worker processes
+zad3-nginx-1     | 2023/04/30 09:42:35 [notice] 1#1: start worker process 22
+zad3-nginx-1     | 2023/04/30 09:42:35 [notice] 1#1: start worker process 23
+zad3-nginx-1     | 2023/04/30 09:42:35 [notice] 1#1: start worker process 24
+zad3-nginx-1     | 2023/04/30 09:42:35 [notice] 1#1: start worker process 25
+zad3-nginx-1     | 172.28.0.1 - - [30/Apr/2023:09:43:03 +0000] "GET /messages/get HTTP/1.1" 200 29 "-" "curl/7.81.0" "-"
+zad3-nginx-1     | 172.28.0.1 - - [30/Apr/2023:09:43:07 +0000] "GET /users/get HTTP/1.1" 200 26 "-" "curl/7.81.0" "-"
+zad3-nginx-1     | 172.28.0.1 - - [30/Apr/2023:09:43:10 +0000] "POST /messages/add HTTP/1.1" 200 18 "-" "curl/7.81.0" "-"
+zad3-nginx-1     | 172.28.0.1 - - [30/Apr/2023:09:43:13 +0000] "POST /users/add HTTP/1.1" 200 18 "-" "curl/7.81.0" "-"
+zad3-nginx-1     | 172.28.0.1 - - [30/Apr/2023:09:43:16 +0000] "GET /messages/get HTTP/1.1" 200 59 "-" "curl/7.81.0" "-"
+zad3-nginx-1     | 172.28.0.1 - - [30/Apr/2023:09:43:18 +0000] "GET /users/get HTTP/1.1" 200 86 "-" "curl/7.81.0" "-"
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 23#23: gracefully shutting down
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 22#22: gracefully shutting down
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 25#25: gracefully shutting down
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 23#23: exiting
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 24#24: gracefully shutting down
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 22#22: exiting
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 25#25: exiting
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 24#24: exiting
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 22#22: exit
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 25#25: exit
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 24#24: exit
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 23#23: exit
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 1#1: worker process 22 exited with code 0
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 1#1: worker process 23 exited with code 0
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 1#1: signal 29 (SIGIO) received
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 1#1: worker process 24 exited with code 0
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 1#1: signal 29 (SIGIO) received
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 1#1: worker process 25 exited with code 0
+zad3-nginx-1     | 2023/04/30 09:43:55 [notice] 1#1: exit
+zad3-postgres-1  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+zad3-postgres-1  | 
+zad3-postgres-1  | waiting for server to start....2023-04-30 09:42:33.356 UTC [49] LOG:  starting PostgreSQL 15.2 (Debian 15.2-1.pgdg110+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit
+zad3-postgres-1  | 2023-04-30 09:42:33.360 UTC [49] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+zad3-postgres-1  | 2023-04-30 09:42:33.377 UTC [52] LOG:  database system was shut down at 2023-04-30 09:42:32 UTC
+zad3-postgres-1  | 2023-04-30 09:42:33.388 UTC [49] LOG:  database system is ready to accept connections
+zad3-postgres-1  |  done
+zad3-postgres-1  | server started
+zad3-postgres-1  | 2023-04-30 09:42:33.674 UTC [68] FATAL:  role "root" does not exist
+zad3-postgres-1  | CREATE DATABASE
+zad3-postgres-1  | 
+zad3-postgres-1  | 
+zad3-postgres-1  | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+zad3-postgres-1  | CREATE TABLE
+zad3-postgres-1  | 
+zad3-postgres-1  | 
+zad3-postgres-1  | 2023-04-30 09:42:33.793 UTC [49] LOG:  received fast shutdown request
+zad3-postgres-1  | waiting for server to shut down....2023-04-30 09:42:33.798 UTC [49] LOG:  aborting any active transactions
+zad3-postgres-1  | 2023-04-30 09:42:33.801 UTC [49] LOG:  background worker "logical replication launcher" (PID 55) exited with exit code 1
+zad3-postgres-1  | 2023-04-30 09:42:33.801 UTC [50] LOG:  shutting down
+zad3-postgres-1  | 2023-04-30 09:42:33.806 UTC [50] LOG:  checkpoint starting: shutdown immediate
+zad3-postgres-1  | 2023-04-30 09:42:33.945 UTC [50] LOG:  checkpoint complete: wrote 918 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.076 s, sync=0.047 s, total=0.144 s; sync files=250, longest=0.010 s, average=0.001 s; distance=4222 kB, estimate=4222 kB
+zad3-postgres-1  | 2023-04-30 09:42:33.954 UTC [49] LOG:  database system is shut down
+zad3-postgres-1  |  done
+zad3-postgres-1  | server stopped
+zad3-postgres-1  | 
+zad3-postgres-1  | PostgreSQL init process complete; ready for start up.
+zad3-postgres-1  | 
+zad3-postgres-1  | 2023-04-30 09:42:34.070 UTC [1] LOG:  starting PostgreSQL 15.2 (Debian 15.2-1.pgdg110+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit
+zad3-postgres-1  | 2023-04-30 09:42:34.077 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+zad3-postgres-1  | 2023-04-30 09:42:34.077 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+zad3-postgres-1  | 2023-04-30 09:42:34.094 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+zad3-postgres-1  | 2023-04-30 09:42:34.111 UTC [75] LOG:  database system was shut down at 2023-04-30 09:42:33 UTC
+zad3-postgres-1  | 2023-04-30 09:42:34.122 UTC [1] LOG:  database system is ready to accept connections
+zad3-postgres-1  | 2023-04-30 09:42:35.927 UTC [86] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:42:38.141 UTC [96] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:42:40.352 UTC [104] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:42:42.590 UTC [112] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:42:44.860 UTC [119] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:42:47.124 UTC [126] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:42:49.371 UTC [133] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:42:51.613 UTC [141] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:42:53.845 UTC [149] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:42:56.063 UTC [158] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:42:58.276 UTC [166] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:00.487 UTC [175] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:02.696 UTC [183] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:04.931 UTC [191] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:07.135 UTC [200] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:09.346 UTC [208] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:11.567 UTC [215] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:13.776 UTC [223] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:15.999 UTC [232] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:18.219 UTC [240] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:20.450 UTC [247] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:22.679 UTC [256] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:24.902 UTC [264] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:27.117 UTC [272] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:29.355 UTC [280] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:31.575 UTC [288] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:33.801 UTC [296] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:36.023 UTC [305] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:38.246 UTC [312] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:40.471 UTC [320] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:42.709 UTC [328] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:44.959 UTC [336] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:47.178 UTC [344] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:49.417 UTC [352] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:51.628 UTC [361] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:53.872 UTC [369] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:56.063 UTC [378] FATAL:  role "root" does not exist
+zad3-postgres-1  | 2023-04-30 09:43:57.106 UTC [1] LOG:  received fast shutdown request
+zad3-postgres-1  | 2023-04-30 09:43:57.111 UTC [1] LOG:  aborting any active transactions
+zad3-postgres-1  | 2023-04-30 09:43:57.113 UTC [1] LOG:  background worker "logical replication launcher" (PID 78) exited with exit code 1
+zad3-postgres-1  | 2023-04-30 09:43:57.115 UTC [73] LOG:  shutting down
+zad3-postgres-1  | 2023-04-30 09:43:57.120 UTC [73] LOG:  checkpoint starting: shutdown immediate
+zad3-postgres-1  | 2023-04-30 09:43:57.151 UTC [73] LOG:  checkpoint complete: wrote 46 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.010 s, total=0.036 s; sync files=14, longest=0.007 s, average=0.001 s; distance=252 kB, estimate=252 kB
+zad3-postgres-1  | 2023-04-30 09:43:57.157 UTC [1] LOG:  database system is shut down
